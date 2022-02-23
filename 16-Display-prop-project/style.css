@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:-apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f1f5f9;
+    line-height: 1.5rem;
+}
+
+.section {
+    padding: 3rem;
+    background-color: #fff;
+}
+
+.section-title {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.title-underline {
+    margin: 0.5rem auto 1rem auto;
+    height: 0.25rem;
+    width: 5rem;
+    background-color: #c7f9cc;
+}
+
+.section-center {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    text-align: left;
+}
