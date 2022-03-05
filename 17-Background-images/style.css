@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-size: 1rem; */
+}
+
+body {
+    background-color: black;
+    font-size: 16px;
+}
+
+div {
+    color: white;
+    height: 100vh;
+    /* border: 1px solid #8f8389; */
+    text-align: center;
+    overflow: auto;
+}
+
+div h1 {
+    font-family: Iosevka;
+    font-size: 3em;
+    margin-top: 25%;
+    /* border: 5px solid black; */
+    text-transform: uppercase;
+}
+
+.large-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), 
+    url("./assets/01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+.small-img {
+    /* background-image: ;
+    background-position: ;
+    background-size: ;
+    background-repeat: ;
+    background-attachment: ; */
+    background: url("./assets/02.jpg") center/cover no-repeat fixed;
+}
+
+.mountain-img {
+    background: url("./assets/mountain_small.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.gradient {
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(121,9,61,0.7) 26%, rgba(255,0,0,0.5) 100%);
+}

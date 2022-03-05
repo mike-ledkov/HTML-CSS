@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+body {
+    font-family: "Open sans", sans-serif;
+    line-height: 1.5em;
+}
+
+.nav {
+    height: 5em;
+    background-color: #222;
+    padding: 0.5em 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-center {
+    /* text-align: center; */
+    width: 90vw;
+    max-width: 1200px;
+    height: 4em;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+
+.hero {
+    background-color: rgb(59, 42, 26);
+    min-height: calc(100vh - 5em);
+    /* padding: 1em 0; */
+    border-bottom: 2px solid white;
+    position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        background: linear-gradient(to right, rgba(39, 28, 20, 1), rgba(39, 28, 20, 0.6)), url(./coffee.jpg) center/cover;
+    }
+}
+
+.hero-center {
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 1200px;
+    padding: 5em 0;
+    color: #fff;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    text-align: center;
+    /* border: 2px solid red; */
+    /* margin: 0 25%; */
+}
+
+.hero-center h1 {
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-style: italic;
+    margin-bottom: 1em;
+    /* font-size: 32px; */
+}
+
+.hero-center p {
+    max-width: 600px;
+    margin: 2em auto;
+    /* margin-bottom: 2em; */
+}
+
+.hero-btn {
+    background-color: transparent;
+    border: 1px solid white;
+    text-transform: uppercase;
+    font-family: Iosevka;
+    color: #fff;
+    padding: 0.7em 1.3em;
+    letter-spacing: 3px;
+
+}
+
+.temp {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #222, rgb(39, 28, 20));
+}
