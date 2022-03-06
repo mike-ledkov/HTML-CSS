@@ -93,20 +93,24 @@ body {
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
     animation: button 2s ease-out 1s 1 forwards;
 }
-
+/* 
 .hero-btn:hover {
     background-color: rgba(80, 80, 80, 0.7);
-}
+} */
 
 .hero-btn:active {
     background-color: black;
 }
 
+button:hover {
+    filter: saturate(200%);
+}
 
 @keyframes text {
     0% {
-        transform: translateY(-300px);
+        transform: translateY(-200px);
         opacity: 0;
+        filter: blur(10px);
     }
 
     100% {
@@ -118,6 +122,7 @@ body {
     0% {
         transform: translateY(100px);
         opacity: 0;
+        filter: blur(10px);
     }
 
     100% {
