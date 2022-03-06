@@ -17,12 +17,14 @@ body {
     position: sticky;
     top: 0;
     z-index: 1;
+    /* border-bottom: 2px solid whitesmoke; */
+    box-shadow: 0px 2px 15px gray;
 }
 
 .nav-title {
     font-size: 2rem;
     text-transform: uppercase;
-    color: white;
+    color: wheat;
     font-weight: bold;
     letter-spacing: 2px;
 }
@@ -38,15 +40,13 @@ body {
 
 .hero {
     background-color: rgb(59, 42, 26);
-    min-height: calc(100vh - 5em);
-    /* padding: 1em 0; */
-    border-bottom: 2px solid white;
+    min-height: calc(150vh);
     position: relative;
 }
 
 @media screen and (min-width: 768px) {
     .hero {
-        background: linear-gradient(to right, rgba(39, 28, 20, 1), rgba(39, 28, 20, 0.6)), url(../assets/coffee.jpg) center/cover;
+        background: linear-gradient(to right, rgba(39, 28, 20, 1), rgba(39, 28, 20, 0.6)), url(../assets/coffee.jpg) top/cover;
     }
 }
 
@@ -54,43 +54,73 @@ body {
     margin: 0 auto;
     width: 90vw;
     max-width: 1200px;
-    padding: 5em 0;
-    color: #fff;
+    padding: 1em 0;
+    color: wheat;
     position: absolute;
-    top: 25%;
+    top: 7%;
     left: 50%;
-    transform: translate(-50%, -25%);
+    transform: translateX(-50%);
     text-align: center;
-    /* border: 2px solid red; */
-    /* margin: 0 25%; */
 }
 
 .hero-center h1 {
     letter-spacing: 2px;
     text-transform: capitalize;
     font-style: italic;
-    margin-bottom: 1em;
-    /* font-size: 32px; */
+    margin-bottom: 0.5em;
 }
 
 .hero-center p {
     max-width: 600px;
     margin: 2em auto;
-    /* margin-bottom: 2em; */
+}
+
+.hero-text {
+    opacity: 0;
+    animation: text 2s ease-out 1s 1 forwards;
 }
 
 .hero-btn {
+    cursor: pointer;
     background-color: transparent;
     border: 1px solid white;
     text-transform: uppercase;
     font-family: Iosevka;
-    color: #fff;
+    color: wheat;
     padding: 0.7em 1.3em;
     letter-spacing: 3px;
-
+    opacity: 0;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: button 2s ease-out 1s 1 forwards;
 }
 
-.temp {
-    min-height: 100vh;
-    background: linear-gradient(to bottom, #222, rgb(39, 28, 20));
+.hero-btn:hover {
+    background-color: rgba(80, 80, 80, 0.7);
+}
+
+.hero-btn:active {
+    background-color: black;
+}
+
+
+@keyframes text {
+    0% {
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes button {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

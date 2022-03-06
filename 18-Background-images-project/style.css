@@ -35,7 +35,7 @@ body {
 }
 
 .hero {
-    background: linear-gradient(to right, rgba(49, 29, 16, 0.8), rgba(49, 29, 16, 0.3)), url(./coffee.jpg);
+    background: linear-gradient(to right, rgba(49, 29, 16, 0.8), rgba(49, 29, 16, 0.3)), url(../assets/coffee.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
