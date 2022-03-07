@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-primary: hsl(188, 81%, 55%);
+    --clr-primary-dark: hsl(188, 81%, 25%);
+    --clr-gray: hsl(208, 13%, 58%);
+    --clr-gray-light: hsl(210, 14%, 92%);
+    --clr-gray-dark: hsl(208, 13%, 25%);
+    --fluid-width: 90vw;
+    --max-width: 1150px;
+
+}
+
+h2 {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
