@@ -1,3 +1,25 @@
+/* Variables */
+:root {
+    --clr-primary: hsl(89, 39%, 40%);
+    --clr-primary-light: hsl(89, 73%, 74%);
+    --clr-primary-dark: hsl(310, 44%, 25%);
+    --clr-gray: hsl(208, 13%, 50%);
+    --clr-gray-light: hsl(210, 14%, 92%);
+    --clr-gray-dark: hsl(208, 13%, 25%);
+    --standard-width: 90vw;
+    --max-width: 800px;
+    --black: #222;
+    --white: #fff;
+    --ff-primary: "Catamaran", sans-serif;
+    --ff-secondary: "Grand Hotel", cursive;
+    --letter-spacing: 0.2rem;
+    --letter-spacing-small: 0.1rem;
+    --border-radius: 0.5rem;
+    --shadow-light: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.4);
+    --transition: all 0.3s linear;
+}
+
 * {
     margin: 0;
     padding: 0;
