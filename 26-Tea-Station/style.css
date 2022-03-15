@@ -241,7 +241,7 @@ span {
     margin-bottom: 1rem;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-gray-1);
-    max-width: 25rem;
+    max-width: 24rem;
 }
 .product-price {
     color: var(--clr-primary);
@@ -261,9 +261,9 @@ span {
     margin-top: 2rem;
     background-color: var(--clr-gray-light);
     border-radius: var(--border-radius);
-    /* box-shadow: var(--shadow-gray-1); */
+    box-shadow: var(--shadow-gray-1);
     transition: var(--transition);
-    max-width: 25rem;
+    max-width: 24rem;
 }
 .service:hover {
     box-shadow: var(--shadow-gray-2);
@@ -271,6 +271,7 @@ span {
 }
 .service-img-container {
     max-width: 25rem;
+    position: relative;
 }
 .service-img-container img {
     height: 20rem;
@@ -280,10 +281,24 @@ span {
 }
 .service-info {
     text-align: center;
-    padding: 3rem 0.5rem 2rem;
+    padding: 2rem 0.5rem 2rem;
 }
 .service-info a {
     font-size: 0.75rem;
+}
+.service-icon {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    font-size: 1.8rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3rem;
+    text-align: center;
+    background-color: var(--clr-primary-light);
+    border-radius: 50%;
+    transform: translate(-50%, 50%);
+    border: 0.3rem solid var(--clr-gray-light);
 }
 
 /* ====================================================== */
@@ -354,9 +369,6 @@ span {
     }
     .banner span {
         font-size: 3rem;
-    }
-    .about-info {
-        /* padding-left: 3rem; */
     }
 }
 @media screen and (min-width: 1200px) {
