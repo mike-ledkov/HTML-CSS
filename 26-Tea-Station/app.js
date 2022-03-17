@@ -1,11 +1,10 @@
 // setup nav
 const sideBtn = document.querySelector(".side-btn")
-const navbar = document.querySelector(".navbar");
+const navbar = document.querySelector(".navbar")
 const navClose = document.querySelector(".nav-close")
 
 //setup date
-const date = (document.getElementById("date")
-.innerHTML = new Date().getFullYear())
+const date = document.getElementById("date").innerHTML = new Date().getFullYear()
 
 // show nav
 sideBtn.addEventListener("click", (e) => {
