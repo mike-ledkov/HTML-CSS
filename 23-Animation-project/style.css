@@ -103,7 +103,7 @@ body {
 }
 
 button:hover {
-    filter: saturate(200%);
+    filter: 
 }
 
 @keyframes text {

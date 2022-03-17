@@ -1,16 +1,28 @@
 // setup nav
-const navBtn = document.getElementById("nav-btn");
-const navbar = document.getElementById("navbar");
-const navClose = document.getElementById("nav-close");
+const sideBtn = document.querySelector(".side-btn")
+const navbar = document.querySelector(".navbar");
+const navClose = document.querySelector(".nav-close")
+
+//setup date
+const date = (document.getElementById("date")
+.innerHTML = new Date().getFullYear())
+
 // show nav
-navBtn.addEventListener("click", () => {
-  navbar.classList.add("showNav");
+sideBtn.addEventListener("click", (e) => {
+  navbar.classList.add("showNav")
+  setTimeout(() => {
+    document.addEventListener("click", closeNav);
+  }, 500, e)
 });
+
 // close nav
 navClose.addEventListener("click", () => {
-  navbar.classList.remove("showNav");
+  navbar.classList.remove("showNav")
 });
-//setup date
-const date = (document.getElementById(
-  "date"
-).innerHTML = new Date().getFullYear());
+
+function closeNav(e) {
+  if (!e.target.classList.contains("navbar")) {
+    navbar.classList.remove("showNav")
+    document.removeEventListener("click", closeNav)
+  }
+}
